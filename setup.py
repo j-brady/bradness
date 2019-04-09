@@ -6,7 +6,7 @@ setup(
     version="0.1",
     description="Oh yeah",
     author="Jacob Brady and Rob Harkness",
-    packages=["bradness"],
+    packages=["dls"],
     #scripts=files,
     #package_data={"nmrsa": ["templates/*"]},
 )
