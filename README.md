@@ -4,5 +4,9 @@
 
 Some scripts for processing DLS data and making primers by Rob Harkness and Jacob Brady.
 
+## Installation
+
+`python setup.py install`
+
 
 
