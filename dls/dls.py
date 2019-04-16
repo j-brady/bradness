@@ -14,6 +14,7 @@ from scipy.constants import k, pi
 # $D = \frac{kT}{6\pi\mu R_h}$
 
 class DLS:
+
     """Load DLS models for fitting autocorrelation functions using the cumulant method
 
        A great explanation for this fitting procedure was written by Barbara Frisken
