@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """Fit DLS data
    
     Usage:
