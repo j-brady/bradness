@@ -42,7 +42,7 @@ if __name__=="__main__":
     data = data.dropna(axis=1)
     print(data)
 
-    columns = data.columns[1:-1]
+    columns = data.columns[1:]
     print(columns)
 
     data = data[data["Time (µs)"]>0.2]
@@ -86,7 +86,7 @@ if __name__=="__main__":
     df["Rh"] = stokes_einstein(df['D'], viscosity(298.15),298.15) 
     df["Rh_err"] = df["D_err"] * (df["Rh"] / df["D"]) 
     print(df)
-    df.to_csv(f"{data_path.stem}_fits.csv",float_format="%.2e",index=False)
+    df.to_csv(f"{data_path.stem}_fits.csv",float_format="%.e",index=False)
     #print(np.sqrt((30542962.5/(3.3e-11*q()**2)**2)))
 
 #    plt.xlabel("s")
