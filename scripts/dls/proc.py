@@ -86,7 +86,7 @@ if __name__=="__main__":
     df["Rh"] = stokes_einstein(df['D'], viscosity(298.15),298.15) 
     df["Rh_err"] = df["D_err"] * (df["Rh"] / df["D"]) 
     print(df)
-    df.to_csv(f"{data_path.stem}_fits.csv",float_format="%.e",index=False)
+    df.to_csv(f"{data_path.stem}_fits.csv",index=False)
     #print(np.sqrt((30542962.5/(3.3e-11*q()**2)**2)))
 
 #    plt.xlabel("s")
